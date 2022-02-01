@@ -11,15 +11,12 @@ const App: React.FC = () => {
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <a
-                    className="App-link"
+                <Button
+                    variant="contained"
                     href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
                 >
-                    Learn React
-                </a>
-                <Button variant="contained">Example</Button>
+                    Link
+                </Button>
             </header>
         </div>
     )
