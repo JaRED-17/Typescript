@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../../logo.svg';
+import Button from '@mui/material/Button'
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
             <header className="App-header">
@@ -18,9 +19,10 @@ function App() {
                 >
                     Learn React
                 </a>
+                <Button variant="contained">Example</Button>
             </header>
         </div>
-    );
+    )
 }
 
 export default App;
