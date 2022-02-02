@@ -6,7 +6,8 @@ interface Props {
 }
 
 const ToDoItem: React.FC<Props> = (props: Props) => {
-    const { task, completed } = props;
+    const { task, completed } = props
+
     return <div>{task}{completed}</div>
 }
 
