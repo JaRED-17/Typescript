@@ -9,7 +9,7 @@ interface ToDoInterface {
 
 const ToDoList: React.FC = () => {
     const ToDo: Array<ToDoInterface> = [
-        {id: 0, task: "ToDo1", completed: false},
+        {id: 0, task: "ToDo1", completed: true},
         {id: 1, task: "ToDo2", completed: false},
         {id: 2, task: "ToDo3", completed: false},
     ]
