@@ -16,7 +16,7 @@ const ToDoList: React.FC = () => {
     ]
 
     return (
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#f5f5f5' }}>
+        <List sx={{ width: '100%', maxWidth: 360, bgColor: '#f5f5f5' }}>
             {ToDo.map(item => <ToDoItem key={item.id} {...item} />)}
         </List>
     )
