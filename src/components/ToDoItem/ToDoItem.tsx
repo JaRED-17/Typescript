@@ -21,10 +21,10 @@ const ToDoItem: React.FC<Props> = (props: Props) => {
         <ListItem
             key={id}
             secondaryAction={
-              <Checkbox
-                  onChange={handleToggle(checked)}
-                  checked={checked}
-              />
+                <Checkbox
+                    onChange={handleToggle(checked)}
+                    checked={checked}
+                />
             }
         >
             <ListItemText primary={task} />
