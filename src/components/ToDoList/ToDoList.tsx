@@ -1,5 +1,6 @@
 import React from 'react'
 import ToDoItem from '../ToDoItem/ToDoItem'
+import List from '@mui/material/List'
 
 interface ToDoInterface {
     id: number,
@@ -9,15 +10,15 @@ interface ToDoInterface {
 
 const ToDoList: React.FC = () => {
     const ToDo: Array<ToDoInterface> = [
-        {id: 0, task: "ToDo1", completed: true},
+        {id: 0, task: "ToDo1", completed: false},
         {id: 1, task: "ToDo2", completed: false},
         {id: 2, task: "ToDo3", completed: false},
     ]
 
     return (
-        <div className='ToDoList'>
-            {ToDo.map(item => <ToDoItem key={item.id} task={item.task} completed={item.completed} />)}
-        </div>
+        <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#f5f5f5' }}>
+            {ToDo.map(item => <ToDoItem key={item.id} {...item} />)}
+        </List>
     )
 }
 

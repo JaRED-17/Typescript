@@ -1,25 +1,34 @@
 import React from 'react'
-import FormControlLabel from '@mui/material/FormControlLabel'
 import Checkbox from '@mui/material/Checkbox'
+import ListItem from '@mui/material/ListItem'
+import ListItemText from '@mui/material/ListItemText'
 
 interface Props {
+    id: number,
     task: string,
     completed: boolean
 }
 
 const ToDoItem: React.FC<Props> = (props: Props) => {
-    const { task, completed } = props
+    const { id, task, completed } = props
+    const [checked, setChecked] = React.useState(completed)
+
+    const handleToggle = (value: boolean) => () => {
+        setChecked(!value)
+    }
 
     return (
-        <div>
-            {task}
-            <FormControlLabel
-                value="start"
-                control={<Checkbox checked={completed} />}
-                label="Completed"
-                labelPlacement="start"
-            />
-        </div>
+        <ListItem
+            key={id}
+            secondaryAction={
+              <Checkbox
+                  onChange={handleToggle(checked)}
+                  checked={checked}
+              />
+            }
+        >
+            <ListItemText primary={task} />
+        </ListItem>
     )
 }
 
