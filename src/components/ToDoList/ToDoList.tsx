@@ -1,12 +1,7 @@
 import React from 'react'
 import ToDoItem from '../ToDoItem/ToDoItem'
 import List from '@mui/material/List'
-
-interface ToDoInterface {
-    id: number,
-    task: string,
-    completed: boolean
-}
+import ToDoInterface from '../../types/interfaces'
 
 const ToDoList: React.FC = () => {
     const ToDo: Array<ToDoInterface> = [
