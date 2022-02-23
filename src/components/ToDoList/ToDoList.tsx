@@ -1,6 +1,6 @@
 import React from 'react'
-import ToDoItem from '../ToDoItem/ToDoItem'
 import List from '@mui/material/List'
+import ToDoItem from '../ToDoItem/ToDoItem'
 import ToDo from '../../types/interfaces'
 
 const ToDoList: React.FC = () => {
@@ -12,7 +12,7 @@ const ToDoList: React.FC = () => {
 
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#f5f5f5' }}>
-            {ToDo.map(item => <ToDoItem key={item.id} {...item} />)}
+            {ToDo.map(item => <ToDoItem key={item.id} id={item.id} task={item.task} completed={item.completed} />)}
         </List>
     )
 }
