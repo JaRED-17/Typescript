@@ -2,9 +2,9 @@ import React from 'react'
 import Checkbox from '@mui/material/Checkbox'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
-import ToDoInterface from '../../types/interfaces'
+import ToDo from '../../types/interfaces'
 
-const ToDoItem: React.FC<ToDoInterface> = (props: ToDoInterface) => {
+const ToDoItem: React.FC<ToDo> = (props: ToDo) => {
     const { id, task, completed } = props
     const [checked, setChecked] = React.useState(completed)
 

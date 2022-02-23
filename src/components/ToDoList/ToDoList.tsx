@@ -1,10 +1,10 @@
 import React from 'react'
 import ToDoItem from '../ToDoItem/ToDoItem'
 import List from '@mui/material/List'
-import ToDoInterface from '../../types/interfaces'
+import ToDo from '../../types/interfaces'
 
 const ToDoList: React.FC = () => {
-    const ToDo: Array<ToDoInterface> = [
+    const ToDo: Array<ToDo> = [
         {id: 0, task: "ToDo1", completed: false},
         {id: 1, task: "ToDo2", completed: false},
         {id: 2, task: "ToDo3", completed: false},
