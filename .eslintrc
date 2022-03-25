@@ -36,8 +36,6 @@
                 "pascalCase": true
             }
         }],
-        "unicorn/prevent-abbreviations": ["error", {
-            "checkShorthandProperties": false
-        }]
+        "unicorn/prevent-abbreviations": "off"
     }
 }
