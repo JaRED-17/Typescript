@@ -4,7 +4,7 @@ import ToDoItem from '../ToDoItem/ToDoItem'
 import ToDo from '../../types/interfaces'
 
 const ToDoList: React.FC = () => {
-    const ToDo: Array<ToDo> = [
+    const ToDoItems: Array<ToDo> = [
         { id: 0, task: 'ToDo1', completed: false },
         { id: 1, task: 'ToDo2', completed: false },
         { id: 2, task: 'ToDo3', completed: false },
@@ -12,7 +12,7 @@ const ToDoList: React.FC = () => {
 
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#f5f5f5' }}>
-            {ToDo.map(item => (
+            {ToDoItems.map(item => (
                 <ToDoItem
                     key={item.id}
                     id={item.id}
